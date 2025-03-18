@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML Form </title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>HTML FORM</h2>
+        <form name="contactForm" >
+            <label for="name">ชื่อ:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">อีเมล:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">เบอร์โทรศัพท์:</label>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" title="กรุณากรอกเบอร์โทรศัพท์ 10 หลัก" oninput="validatePhone()">
+            
+            <label for="topic">หัวข้อที่ต้องการติดต่อ:</label>
+            <select id="topic" name="topic" required>
+                <option value="">กรุณาเลือก</option>
+                <option value="สอบถามสินค้า">สอบถามสินค้า</option>
+                <option value="ขอใบเสนอราคา">ขอใบเสนอราคา</option>
+                <option value="แจ้งปัญหา">แจ้งปัญหา</option>
+                <option value="ข้อเสนอแนะ">ข้อเสนอแนะ</option>
+            </select>
+            
+            <label for="message">ข้อความ:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <div class="form-footer">
+                <button type="submit">Submit</button>
+                <button type="reset" >Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

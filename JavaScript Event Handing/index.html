@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Event Handing</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="gallery-container">
+        <div class="main-image">
+            <img id="main-img" src="https://picsum.photos/500/300" alt="Main Image">
+        </div>
+        <div class="thumbnail-container">
+            <img src="https://picsum.photos/id/237/200/300" alt="Thumbnail 1" onclick="changeImage('https://picsum.photos/id/237/200/300')">
+            <img src="https://picsum.photos/seed/picsum/200/300" alt="Thumbnail 2" onclick="changeImage('https://picsum.photos/seed/picsum/200/300')">
+            <img src="https://picsum.photos/200/300?grayscale" alt="Thumbnail 3" onclick="changeImage('https://picsum.photos/200/300?grayscale')">
+            <img src="https://picsum.photos/id/870/200/300?grayscale&blur=2" alt="Thumbnail 4" onclick="changeImage('https://picsum.photos/id/870/200/300?grayscale&blur=2')">
+        </div>
+    </div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
