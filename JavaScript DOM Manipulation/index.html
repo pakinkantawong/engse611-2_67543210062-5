@@ -1,13 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript DOM Manipulation</title>
+    <title>TO DO LIST</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+
+<div class="todo-container">
+    <h1>TO DO LIST</h1>
+    <input type="text" id="task-input" placeholder="กรอกงานที่ต้องทำ">
     
-</body>
+    <select id="task-category">
+        <option value="personal">เรียน</option>
+        <option value="work">งาน</option>
+        <option value="shopping">ดูหนัง</option>
+    </select>
+
+    <button id="add-task">กดตรงนี้!!!</button>
+    
+    <ul id="todo-list"></ul>
+</div>
+
 <script src="index.js"></script>
+</body>
 </html>
